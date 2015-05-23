@@ -27,7 +27,7 @@
 /***** Change this, or use -c on the command line to specify it *****/
 
 #ifndef SERVER_ROOT
-#define SERVER_ROOT "/etc/boa"
+#define SERVER_ROOT "/data/boa"
 #endif
 
 /***** Change this via the CGIPath configuration value in boa.conf *****/
