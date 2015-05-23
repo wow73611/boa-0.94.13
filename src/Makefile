@@ -20,7 +20,7 @@ GCC_FLAGS = -Wstrict-prototypes -Wpointer-arith -Wcast-align -Wcast-qual\
 
 srcdir = .
 VPATH = .:./../extras
-LDFLAGS =  -g
+LDFLAGS =  -g -static
 LIBS =  
 CFLAGS = -g -O2 -pipe -Wall -I.
 
@@ -28,8 +28,8 @@ CFLAGS = -g -O2 -pipe -Wall -I.
 
 YACC = yacc 
 LEX = lex 
-CC = gcc 
-CPP = gcc -E
+CC = /usr/local/arm/4.3.1-eabi-armv6/usr/bin/arm-linux-gcc #gcc 
+CPP = /usr/local/arm/4.3.1-eabi-armv6/usr/bin/arm-linux-gcc -E #gcc -E
 
 SOURCES = alias.c boa.c buffer.c cgi.c cgi_header.c config.c escape.c \
 	get.c hash.c ip.c log.c mmap_cache.c pipe.c queue.c read.c \
